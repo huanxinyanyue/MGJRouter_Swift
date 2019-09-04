@@ -330,10 +330,10 @@ extension MGJRouter {
                     found = false
                 }
             }
-            
-            if !found && (subRoutes["_"] == nil) {
-                return nil
-            }
+        }
+        
+        if !found {
+            return nil
         }
         
         // Extract Params From Query.
